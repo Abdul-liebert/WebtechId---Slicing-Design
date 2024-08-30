@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #282c34;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #61dafb;
+    border-radius: 4px;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px 30px;
+}
+
+/* Blog Details Styles */
+.blog-details {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.blog-details h1 {
+    margin-top: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* Atur tinggi sesuai kebutuhan */
+    overflow: hidden;
+    /* Menyembunyikan bagian gambar yang melebihi kontainer */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Memastikan gambar menutupi kontainer */
+}
+
+.image-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-cover {
+    opacity: 1;
+}
+
+.cover-text {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+
+.blog-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.blog-meta {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Comments Styles */
+.comments {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.comment-user-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.comment-content {
+    flex: 1;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.comment-author {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.comment-date {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.comment-text {
+    margin: 10px 0;
+}
+
+/* Comment Form Styles */
+.comment-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form h2 {
+    margin-top: 0;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.comment-form textarea {
+    resize: vertical;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+    background-color: #21a1f1;
+}
+
+/* Popular Tags Styles */
+.popular-tags {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popular-tags h2 {
+    margin-top: 0;
+}
+
+.popular-tags ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-tags ul li {
+    margin: 5px 10px;
+}
+
+.popular-tags ul li a {
+    text-decoration: none;
+    color: #61dafb;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.popular-tags ul li a:hover {
+    color: #21a1f1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    margin-top: 10px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+.social-icons svg:hover {
+    fill: #61dafb;
+}
